@@ -1,0 +1,958 @@
+[
+  {
+    "type": "function",
+    "name": "agreementType",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "authorizeFlowOperatorWithFullControl",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "createFlow",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "createFlowByOperator",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "decreaseFlowRateAllowance",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "subtractedFlowRateAllowance",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "deleteFlow",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "deleteFlowByOperator",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getAccountFlowInfo",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "deposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "owedDeposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getDepositRequiredForFlowRate",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "deposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getFlow",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "deposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "owedDeposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getFlowByID",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "agreementId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "deposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "owedDeposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getFlowOperatorData",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "flowOperatorId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "permissions",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "flowRateAllowance",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getFlowOperatorDataByID",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "flowOperatorId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "permissions",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "flowRateAllowance",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getMaximumFlowRateFromDeposit",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "deposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getNetFlow",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "increaseFlowRateAllowance",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "addedFlowRateAllowance",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "isPatricianPeriod",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "isPatricianPeriodNow",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "isCurrentlyPatricianPeriod",
+        "type": "bool",
+        "internalType": "bool"
+      },
+      {
+        "name": "timestamp",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "realtimeBalanceOf",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "time",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "dynamicBalance",
+        "type": "int256",
+        "internalType": "int256"
+      },
+      {
+        "name": "deposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "owedDeposit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "revokeFlowOperatorWithFullControl",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "updateFlow",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "updateFlowByOperator",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "updateFlowOperatorPermissions",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "permissions",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "flowRateAllowance",
+        "type": "int96",
+        "internalType": "int96"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "FlowOperatorUpdated",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "indexed": true,
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "permissions",
+        "type": "uint8",
+        "indexed": false,
+        "internalType": "uint8"
+      },
+      {
+        "name": "flowRateAllowance",
+        "type": "int96",
+        "indexed": false,
+        "internalType": "int96"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "FlowUpdated",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "indexed": true,
+        "internalType": "contract ISuperfluidToken"
+      },
+      {
+        "name": "sender",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "receiver",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "flowRate",
+        "type": "int96",
+        "indexed": false,
+        "internalType": "int96"
+      },
+      {
+        "name": "totalSenderFlowRate",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "int256"
+      },
+      {
+        "name": "totalReceiverFlowRate",
+        "type": "int256",
+        "indexed": false,
+        "internalType": "int256"
+      },
+      {
+        "name": "userData",
+        "type": "bytes",
+        "indexed": false,
+        "internalType": "bytes"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "FlowUpdatedExtension",
+    "inputs": [
+      {
+        "name": "flowOperator",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "deposit",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_FLOW_RATE_ALLOWANCE_EXCEEDED",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_NO_NEGATIVE_ALLOWANCE",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_NO_SENDER_CREATE",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_NO_SENDER_FLOW_OPERATOR",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_NO_SENDER_UPDATE",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_OPERATOR_NO_CREATE_PERMISSIONS",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_OPERATOR_NO_DELETE_PERMISSIONS",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_OPERATOR_NO_UPDATE_PERMISSIONS",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ACL_UNCLEAN_PERMISSIONS",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_DEPOSIT_TOO_BIG",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_FLOW_ALREADY_EXISTS",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_FLOW_DOES_NOT_EXIST",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_FLOW_RATE_TOO_BIG",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_HOOK_OUT_OF_GAS",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_INSUFFICIENT_BALANCE",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_INVALID_FLOW_RATE",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_NON_CRITICAL_SENDER",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_NO_SELF_FLOW",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ZERO_ADDRESS_RECEIVER",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CFA_ZERO_ADDRESS_SENDER",
+    "inputs": []
+  }
+]

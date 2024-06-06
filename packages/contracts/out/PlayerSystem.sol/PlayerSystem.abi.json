@@ -1,0 +1,91 @@
+[
+  {
+    "type": "function",
+    "name": "move",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "int32",
+        "internalType": "int32"
+      },
+      {
+        "name": "y",
+        "type": "int32",
+        "internalType": "int32"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "spawn",
+    "inputs": [
+      {
+        "name": "x",
+        "type": "int32",
+        "internalType": "int32"
+      },
+      {
+        "name": "y",
+        "type": "int32",
+        "internalType": "int32"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "error",
+    "name": "Slice_OutOfBounds",
+    "inputs": [
+      {
+        "name": "data",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "start",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "end",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "StoreCore_InvalidDataLength",
+    "inputs": [
+      {
+        "name": "expected",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "received",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "StoreCore_TableNotFound",
+    "inputs": [
+      {
+        "name": "tableId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "tableIdString",
+        "type": "string",
+        "internalType": "string"
+      }
+    ]
+  }
+]

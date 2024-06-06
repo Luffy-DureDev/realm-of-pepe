@@ -1,0 +1,412 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "_inResourceToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "_outResourceToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "_rateConversion",
+        "type": "int8",
+        "internalType": "int8"
+      },
+      {
+        "name": "_maxInFlowRate",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "CFAV1_TYPE",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "afterAgreementCreated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "afterAgreementTerminated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "afterAgreementUpdated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "beforeAgreementCreated",
+    "inputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "beforeAgreementTerminated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "beforeAgreementUpdated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "host",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperfluid"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "inResourceToken",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "isAcceptedSuperToken",
+    "inputs": [
+      {
+        "name": "_superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "maxInFlowRate",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "outResourceToken",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "rateConversion",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "int8",
+        "internalType": "int8"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "transfer",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "_to",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "_amount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "error",
+    "name": "NotAcceptedSuperToken",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "NotImplemented",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UnauthorizedHost",
+    "inputs": []
+  }
+]

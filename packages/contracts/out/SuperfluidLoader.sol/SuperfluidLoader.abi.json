@@ -1,0 +1,54 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "resolver",
+        "type": "address",
+        "internalType": "contract IResolver"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "loadFramework",
+    "inputs": [
+      {
+        "name": "releaseVersion",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "result",
+        "type": "tuple",
+        "internalType": "struct SuperfluidLoader.Framework",
+        "components": [
+          {
+            "name": "superfluid",
+            "type": "address",
+            "internalType": "contract ISuperfluid"
+          },
+          {
+            "name": "superTokenFactory",
+            "type": "address",
+            "internalType": "contract ISuperTokenFactory"
+          },
+          {
+            "name": "agreementCFAv1",
+            "type": "address",
+            "internalType": "contract ISuperAgreement"
+          },
+          {
+            "name": "agreementIDAv1",
+            "type": "address",
+            "internalType": "contract ISuperAgreement"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  }
+]

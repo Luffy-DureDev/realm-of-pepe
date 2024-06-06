@@ -1,0 +1,149 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "superTokenFactoryAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "resolverAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "RESOLVER_BASE_SUPER_TOKEN_KEY",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "RESOLVER_BASE_TOKEN_KEY",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "deployNativeAssetSuperToken",
+    "inputs": [
+      {
+        "name": "_name",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "_symbol",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "nativeAssetSuperToken",
+        "type": "address",
+        "internalType": "contract ISETH"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "deployPureSuperToken",
+    "inputs": [
+      {
+        "name": "_name",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "_symbol",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "_initialSupply",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "pureSuperToken",
+        "type": "address",
+        "internalType": "contract IPureSuperToken"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "deployWrapperSuperToken",
+    "inputs": [
+      {
+        "name": "_underlyingName",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "_underlyingSymbol",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "_decimals",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "_mintLimit",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "underlyingToken",
+        "type": "address",
+        "internalType": "contract TestToken"
+      },
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract SuperToken"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "transferOwnership",
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

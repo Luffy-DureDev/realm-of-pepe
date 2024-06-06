@@ -1,0 +1,122 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "_superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "_rateOfGeneration",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "changeRateOfGeneration",
+    "inputs": [
+      {
+        "name": "newRateOfGeneration",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "closeStream",
+    "inputs": [
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "openStream",
+    "inputs": [
+      {
+        "name": "receiver",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "rateOfGeneration",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "int96",
+        "internalType": "int96"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "superToken",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "RateOfGenerationChanged",
+    "inputs": [
+      {
+        "name": "newRate",
+        "type": "int96",
+        "indexed": false,
+        "internalType": "int96"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "StreamClosed",
+    "inputs": [
+      {
+        "name": "receiver",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "StreamOpened",
+    "inputs": [
+      {
+        "name": "receiver",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  }
+]

@@ -1,0 +1,425 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "host",
+        "type": "address",
+        "internalType": "contract ISuperfluid"
+      },
+      {
+        "name": "superTokenLogic",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "constantOutflowNFT",
+        "type": "address",
+        "internalType": "contract IConstantOutflowNFT"
+      },
+      {
+        "name": "constantInflowNFT",
+        "type": "address",
+        "internalType": "contract IConstantInflowNFT"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "CONSTANT_INFLOW_NFT_LOGIC",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IConstantInflowNFT"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "CONSTANT_OUTFLOW_NFT_LOGIC",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract IConstantOutflowNFT"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "_SUPER_TOKEN_LOGIC",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "castrate",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "computeCanonicalERC20WrapperAddress",
+    "inputs": [
+      {
+        "name": "_underlyingToken",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "superTokenAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "isDeployed",
+        "type": "bool",
+        "internalType": "bool"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "createCanonicalERC20Wrapper",
+    "inputs": [
+      {
+        "name": "_underlyingToken",
+        "type": "address",
+        "internalType": "contract ERC20WithTokenInfo"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "createERC20Wrapper",
+    "inputs": [
+      {
+        "name": "underlyingToken",
+        "type": "address",
+        "internalType": "contract ERC20WithTokenInfo"
+      },
+      {
+        "name": "upgradability",
+        "type": "uint8",
+        "internalType": "enum ISuperTokenFactory.Upgradability"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "symbol",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "createERC20Wrapper",
+    "inputs": [
+      {
+        "name": "underlyingToken",
+        "type": "address",
+        "internalType": "contract IERC20"
+      },
+      {
+        "name": "underlyingDecimals",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "upgradability",
+        "type": "uint8",
+        "internalType": "enum ISuperTokenFactory.Upgradability"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "internalType": "string"
+      },
+      {
+        "name": "symbol",
+        "type": "string",
+        "internalType": "string"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "getCanonicalERC20Wrapper",
+    "inputs": [
+      {
+        "name": "_underlyingTokenAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "superTokenAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getCodeAddress",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "codeAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getHost",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "host",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getSuperTokenLogic",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "initialize",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "initializeCanonicalWrapperSuperTokens",
+    "inputs": [
+      {
+        "name": "_data",
+        "type": "tuple[]",
+        "internalType": "struct SuperTokenFactoryBase.InitializeData[]",
+        "components": [
+          {
+            "name": "underlyingToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "superToken",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "initializeCustomSuperToken",
+    "inputs": [
+      {
+        "name": "customSuperTokenProxy",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "proxiableUUID",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "updateCode",
+    "inputs": [
+      {
+        "name": "newAddress",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "CodeUpdated",
+    "inputs": [
+      {
+        "name": "uuid",
+        "type": "bytes32",
+        "indexed": false,
+        "internalType": "bytes32"
+      },
+      {
+        "name": "codeAddress",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "CustomSuperTokenCreated",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "indexed": true,
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "Initialized",
+    "inputs": [
+      {
+        "name": "version",
+        "type": "uint8",
+        "indexed": false,
+        "internalType": "uint8"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "SuperTokenCreated",
+    "inputs": [
+      {
+        "name": "token",
+        "type": "address",
+        "indexed": true,
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "SuperTokenLogicCreated",
+    "inputs": [
+      {
+        "name": "tokenLogic",
+        "type": "address",
+        "indexed": true,
+        "internalType": "contract ISuperToken"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "SUPER_TOKEN_FACTORY_ALREADY_EXISTS",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SUPER_TOKEN_FACTORY_DOES_NOT_EXIST",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SUPER_TOKEN_FACTORY_NON_UPGRADEABLE_IS_DEPRECATED",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SUPER_TOKEN_FACTORY_ONLY_GOVERNANCE_OWNER",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SUPER_TOKEN_FACTORY_ONLY_HOST",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SUPER_TOKEN_FACTORY_UNINITIALIZED",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SUPER_TOKEN_FACTORY_ZERO_ADDRESS",
+    "inputs": []
+  }
+]

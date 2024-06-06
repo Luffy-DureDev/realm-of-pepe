@@ -1,0 +1,251 @@
+[
+  {
+    "type": "function",
+    "name": "afterAgreementCreated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "agreementId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "afterAgreementTerminated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "agreementId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "afterAgreementUpdated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "agreementId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "newCtx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "beforeAgreementCreated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "agreementId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "beforeAgreementTerminated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "agreementId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "beforeAgreementUpdated",
+    "inputs": [
+      {
+        "name": "superToken",
+        "type": "address",
+        "internalType": "contract ISuperToken"
+      },
+      {
+        "name": "agreementClass",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "agreementId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "agreementData",
+        "type": "bytes",
+        "internalType": "bytes"
+      },
+      {
+        "name": "ctx",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "cbdata",
+        "type": "bytes",
+        "internalType": "bytes"
+      }
+    ],
+    "stateMutability": "view"
+  }
+]
