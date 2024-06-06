@@ -26,5 +26,5 @@
     "node": "18.x",
     "pnpm": "8.x"
   },
-  "packageManager": "pnpm@6.3.2"
+  "packageManager": "pnpm@8.0.0"
 }
