@@ -28,7 +28,7 @@
 # values to keep them out of your source repository.
 [context.production]
   publish = "output/"
-  command = "pnpm run initialize"
+  command = "pnpm run a"
   environment = {NODE_VERSION = "18.0.0"}
 
 # Deploy Preview context: all deploys generated from
